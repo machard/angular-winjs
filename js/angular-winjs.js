@@ -948,7 +948,7 @@
                 var options = objectMap(api, function (value, key) { return value($scope, key, element, function () { return pivot; }, bindings); });
                 pivot = new WinJS.UI.Pivot(element, options);
                 addDestroyListener($scope, pivot, bindings);
-                return hub;
+                return pivot;
             }
         };
     });
