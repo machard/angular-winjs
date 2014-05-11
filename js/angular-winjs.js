@@ -216,6 +216,8 @@
     BINDING_dataSource.binding = "=?";
 
     function BINDING_event($scope, key, element, getControl, bindings) {
+        element.removeAttribute(key);
+        
         bindings.push($scope.$watch(key, function (newValue, oldValue) {
             if (newValue !== oldValue) {
                 getControl()[key] = newValue;
