@@ -15,6 +15,7 @@
     </metadata>
     <files>
         <file src="..\js\angular-winjs.js" target="content\Scripts\angular-winjs.js" />
+        <file src="..\js\angular-winjs-route.js" target="content\Scripts\angular-winjs-route.js" />
         <file src="..\js\jquery-patched.js" target="content\Scripts\jquery-patched.js" />
         <file src="..\readme.txt" target="" />
     </files>
