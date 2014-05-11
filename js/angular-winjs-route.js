@@ -1042,6 +1042,8 @@ function ngViewFillContentFactory($compile, $controller, $route) {
               }
 
               link(scope);
+
+              if (!scope.$$phase) scope.$apply(); // sometimes its needed
           });
       })
       
